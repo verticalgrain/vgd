@@ -1,0 +1,88 @@
+$whatamiheight: 45px;
+
+.what-am-i {
+  overflow: hidden;
+  font-size: 30px;
+  line-height: 45px;
+  &__left, &__right {
+    float: left;
+    width: 50%;
+    height: $whatamiheight;
+  }
+  &__left {
+    text-align: right;
+    padding-right: 7px;
+    transform: translate3d(0,-$whatamiheight*2,0);
+    animation: whatami-left 12s 1s infinite;
+    animation-fill-mode: forwards;
+  }
+  &__right {
+    transform: translate3d(0,-$whatamiheight*3,0);
+    animation: whatami-right 12s 1s infinite;
+    animation-fill-mode: forwards;
+  }
+  span {
+    display: block;
+    height: $whatamiheight; // Based on line height of text
+  }
+}
+
+@keyframes whatami-left {
+  0% {
+    transform: translate3d(0,-$whatamiheight*2,0);
+  }
+  11% {
+    transform: translate3d(0,-$whatamiheight*2,0);
+  }
+  16% {
+    transform: translate3d(0,-$whatamiheight,0);
+  }
+  43% {
+    transform: translate3d(0,-$whatamiheight,0);
+  }
+  48% {
+    transform: translate3d(0,0,0);
+  }
+  64% {
+    transform: translate3d(0,0,0);
+  }
+  80% {
+    transform: translate3d(0,0,0);
+  }
+  95% {
+    transform: translate3d(0,0,0); 
+  }
+  100% {
+    transform: translate3d(0,-$whatamiheight*2,0);
+  }
+}
+
+@keyframes whatami-right {
+  0% {
+    transform: translate3d(0,-$whatamiheight*3,0);
+  }
+  27% {
+    transform: translate3d(0,-$whatamiheight*3,0);
+  }
+  32% {
+    transform: translate3d(0,-$whatamiheight*2,0);
+  }
+  59% {
+    transform: translate3d(0,-$whatamiheight*2,0);
+  }
+  64% {
+    transform: translate3d(0,-$whatamiheight,0);
+  }
+  75% {
+    transform: translate3d(0,-$whatamiheight,0);
+  }
+  80% {
+    transform: translate3d(0,0,0);
+  }
+  95% {
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    transform: translate3d(0,-$whatamiheight*3,0);
+  }
+}

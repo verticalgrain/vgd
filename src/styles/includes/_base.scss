@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  margin: 50px $space-unit 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  @include type(headingdefault);
+  background: $color-orange-3;
+  // background-image: -webkit-radial-gradient(-10vh, $color-orange-2, $color-orange-4);
+  // // background-image: -moz-radial-gradient(-50vh, $color-orange-1, $color-orange-4);
+  // // background-image: -o-radial-gradient(-50vh, $color-orange-1, $color-orange-4);
+  // // background-image: radial-gradient(-50vh, $color-orange-1, $color-orange-4);
+  background-repeat: no-repeat;
+  padding-top: 0;
+  min-height: 100vh;
+  position: relative;
+}
+a {
+  @include type(headingdefault);
+  text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  margin: 0;
+}
+h1,
+.heading1 {
+  @include type(heading1);
+}
+h5,
+.heading5 {
+  @include type(heading5);
+}
+p,
+ul,
+ol {
+  &:first-of-type {
+    margin-top: 0; // This is because of normalize. If you Meyer you have it anyway.
+  }
+  &:last-of-type {
+    margin-bottom: 0; // This is because of normalize. If you Meyer you have it anyway.
+  }
+}
+hr {
+  border-top: 1px solid $color-base;
+  border-bottom: 0px;
+  background: transparent;
+
+}

@@ -1,12 +1,2 @@
-_site
-.sass-cache
 .DS_Store
-**/.DS_Store
-**/node_modules
-**/.sass-cache
-wp-config.php
-wp-content/uploads/
-wp-content/cache/
-*.gz
-*.zip
-.htaccess
+/node_modules

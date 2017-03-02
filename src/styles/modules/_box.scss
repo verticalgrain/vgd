@@ -1,0 +1,13 @@
+.box {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: $space-unit;
+  margin: $space-unit 0;
+  position: relative;
+  box-shadow: -10px -10px 0px 0px black;
+  @include clearfix;
+  transform: translate3d(5px,0,0);
+  text-align: center;
+}
