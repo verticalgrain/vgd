@@ -1,23 +1,140 @@
----
-layout: default
----
+<html>
+<head>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <link rel="stylesheet" type="text/css" href="dist/styles/style.css">
+  <script src="dist/js/application-head.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="overlay">
+  </div>
 
-<div class="home">
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--12">
+      <div class="what-am-i">
+        <div class="what-am-i__left">
+          <span>Browser</span>
+          <span>Front-end</span>
+          <span>Web</span>
+        </div>
+        <div class="what-am-i__right">
+          <span>Artist</span>
+          <span>Hacker</span>
+          <span>Engineer</span>
+          <span>Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-container l-container--centered">
+    <div class="l-col l-col--4 u-align-left">
+      <h5>The portfolio of Jamie Graham</h5>
+    </div>
+    <div class="l-col l-col--4 u-align-right">
+      <h5>February 28, 2017</h5>
+    </div>
+    <div class="l-col l-col--8 l-margin-bottom-3">
+      <hr>
+      <div>
+        <p>I'm a Browser Artist, residing in Ladysmith, BC, Canada. I work with a team I love, at <a href="http://domain7.com">Domain7</a>. I have a wife and three children.</p>
+      </div>
+    </div><!-- .l-col -->
+  </div>
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--8">
+      <div>
+        <p>I've been honing my craft for 8 years. For the first 5 I operated my design / development company, Vertical Grain Design, working with my own clients and also contracting for agencies such as <a href="http://rethinkcanada.com/" target="blank">Rethink</a>, <a href="http://www.dossiercreative.com/" target="blank">Dossier Creative</a>, <a href="https://www.behance.net/alsoknownas" target="blank">Also Known As</a>, and <a href="http://briteweb.com/" target="blank">Briteweb</a>. For the last 3 years I've had the pleasure of working with the good folk at <a href="http://domain7.com" target="blank">Domain7</a>.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--8">
+      I'm a markup / styling nerd, and am not satisfied with less than perfect markup accross all devices. I'm into the latest styling tools such as LESS, SCSS, PostCSS, and BEM methodology.
+    </div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="l-container l-container--centered  l-margin-bottom-3">
+    <div class="l-col l-col--8">
+    <p>I've worked with a number of CMS. My level of expertise is highest in Wordpress, where I create custom CMS for clients. Lately I'm excited about the Wordpress JSON api. I'm also fluent with Expression Engine and Craft, and have dabbled in Drupal and Rails. I get really excited about ultra lean javascript CMS ideas, from git based <a href="https://www.foxflow.com/" target="blank">FoxFlow</a>, to <a href="https://firebase.google.com/" target="blank">Firebase single page apps</a>, all the way to a google spreadsheet backend paired with a jquery frontend.</p>
+    </div>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--8">
+      <p>I like Javascript. jQuery, of course, also Node development, ES6, Firebase, front-end frameworks like React and Angular, and Git based FoxFlow.  </p>
+    </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--8">
+      <p>I really enjoy making weird things like <a href="http://verticalgraindesign.com/iapetus/" target="blank">Iapetus</a>, <a href="http://verticalgraindesign.com/oscar/" target="blank">Oscar</a>, <a href="http://verticalgraindesign.com/truefacts/" target="blank">truefacts</a>.</p>
+    </div>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="l-container l-container--centered l-margin-bottom-3">
+    <div class="l-col l-col--8">
+      <p>I like cooking and I made a lean, mobile friendly recipe site, <a href="http://mixmeals.com" target="blank">MixMeals.com,</a> to keep all my favourite meals</p>
+    </div>
+  </div>
 
-</div>
+  <div class="l-container l-container--centered l-margin-top-2">
+    <div class="l-col l-col--8">
+      <p>Places I can be found online:</p>
+      <div class="box">
+        <a class="" href="http://codepen.io/verticalgrain/pens/public" target="blank">verticalgrain on codepen</a>
+      </div>
+      <div class="box">
+        <a class="" href="https://github.com/verticalgrain" target="blank">verticalgrain on github</a>
+      </div>
+      <div class="box">
+        <a class="" href="https://www.linkedin.com/in/jamiegraham82" target="blank">jamiegraham82 on LinkedIn</a>
+      </div>
+      <div class="box">
+        <a class="" href="http://stackoverflow.com/users/2196202/verticalgrain" target="blank">verticalgrain on Stackoverflow</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-container l-margin-3">
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/Nordica-2.jpg" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/Dossier-creative.jpg" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/itstartswithme.png" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/Kasian.png" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/Phix.png" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/Telework.png" />
+      </div>
+    </div>
+    <div class="l-col--6">
+      <div class="box">
+        <img class="u-responsive" src="images/UBC-centennial.png" />
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="dist/js/application.js" type="text/javascript"></script>
+</body>
+</html>

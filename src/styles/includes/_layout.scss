@@ -1,0 +1,166 @@
+/*
+  Layout goes in this file.
+  Layout classes should be prefixed `.l-`
+*/
+
+$breakpoint-no-mediaqueries: 1020px !default; // Not necessary if using sassyplate
+
+$l-gutter-body: 20px !default;
+$l-gutter-column: 10px !default;
+$l-column-count: 12 !default;
+$l-container-width: map-get($breakpoints,xlarge);
+$l-col-width: 100% / $l-column-count;
+
+// Optional fullwidth wrapper element
+.l-fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @include clearfix;
+}
+
+.l-fullwidth-bg {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background: inherit;
+      width: 50vw;
+    z-index: -1;
+
+    @media (max-width: map-get($breakpoints, small)) {
+      width: 100vw;
+    }// media max small
+
+  }// &:before
+
+  &--left {
+
+    &:before {
+      left: 50%;
+      margin-left: -50vw;
+    }// &:before
+
+  }// &--left
+
+  &--right {
+
+    &:before {
+      right: 50%;
+      margin-right: -50vw;
+    }// &:before
+
+  }// &--right
+
+  // prevents .l-fullwidth-bg from adding to page width
+  &__wrapper{
+    overflow-x: hidden;
+
+    @media (max-width: map-get($breakpoints,small)) {
+        overflow: initial;
+    }
+  }
+
+}// .l-fullwidth-bg
+
+
+
+.l-fullheight {
+  height: 100vh;
+}
+
+// Grid container and column styles
+.l-container {
+  width: 100%;
+  max-width: 100%; // $l-container-width + ($l-gutter-body*2);
+  box-sizing: border-box;
+  margin: 0 auto;
+  @include clearfix;
+
+  &--flex {
+    display: flex;
+
+    @media (max-width: map-get($breakpoints,small)) {
+    flex-direction: column;
+    }
+
+  }// &--flex
+
+  padding-left: $l-gutter-body;
+  padding-right: $l-gutter-body;
+  @include clearfix;
+  div[class*='l-col--'] {
+    float: left;
+    text-align: left;
+    padding-left: $l-gutter-column;
+    padding-right: $l-gutter-column;
+    box-sizing: inherit;
+    &.l-no-gutter {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    &.l-col--centered {
+      text-align: center;
+    }
+  }
+  .no-mediaqueries & {
+    min-width: map-get($breakpoints,medium);
+  }
+  &--centered {
+    text-align: center;
+    justify-content: center;
+    div[class*='l-col--'] {
+      float: none !important;
+      display:inline-block;
+      vertical-align:top;
+    }
+  }
+  &--fullwidth {
+    max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+
+.l-no-gutter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+// Col function, for use setting column widths in stylesheets instead of with inline classes
+@function col($columns){
+  @return $l-col-width * $columns;
+}
+
+// Classes for columns .col-1 through .col-12
+$i: 1;
+@for $i from 1 through $l-column-count {
+  .l-col--#{$i} {
+    width: $l-col-width * $i;
+    @media (max-width: map-get($breakpoints,small)) {
+      width: 100% !important;
+    }
+  }
+}
+
+// Add background colours to columns and container
+@mixin layout-test {
+  .l-container-wrapper {
+    background: rgba(black,0.15);
+  }
+  .l-container {
+    background: rgba(black,0.25);
+  }
+  [class*='l-col-'] {
+    background: rgba(black,0.35);
+  }
+}
+body {
+  //@include layout-test; // Uncomment this line to enable layout test
+}
