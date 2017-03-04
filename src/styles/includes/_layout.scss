@@ -6,7 +6,7 @@
 $breakpoint-no-mediaqueries: 1020px !default; // Not necessary if using sassyplate
 
 $l-gutter-body: 20px !default;
-$l-gutter-column: 10px !default;
+$l-gutter-column: 15px !default;
 $l-column-count: 12 !default;
 $l-container-width: map-get($breakpoints,xlarge);
 $l-col-width: 100% / $l-column-count;

@@ -14,12 +14,11 @@
     // Example of a base style for h1
     headingdefault: (
       font-family: $font-serif,
-      font-size: 22px,
-      line-height: 210%,
+      font-size: 16px,
+      line-height: 180%,
       color: $color-base,
-      font-weight: 600,
+      font-weight: 500,
       letter-spacing: 0.025em,
-      text-align: left,
     ),
     heading1: (
       font-size: 44px,
@@ -31,6 +30,16 @@
       smaller:(
         font-size:60px,
       )
+    ),
+    heading2: (
+      font-size: 24px,
+      font-weight: 600,
+      font-family: $font-sans,
+      line-height: 140%
+    ),
+    heading3: (
+      font-size: 20px,
+      font-family: $font-sans
     ),
     heading5: (
       font-size: 14px,
