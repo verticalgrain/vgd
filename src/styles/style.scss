@@ -32,7 +32,6 @@
 
 // Print, inlined to avoid the additional HTTP request: h5bp.com/r
 @import 'includes/print';
-@import 'modules/rotating-words';
 @import 'modules/overlay';
 @import 'modules/rapper';
 @import 'modules/what-am-i';
@@ -41,3 +40,5 @@
 @import 'modules/spacebox';
 @import 'modules/planet';
 @import 'modules/hero';
+@import 'modules/work';
+@import 'modules/footer';

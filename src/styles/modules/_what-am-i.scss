@@ -1,18 +1,18 @@
-$whatamiheight: 30px;
+$whatamiheight: 32px;
 
 .what-am-i {
   overflow: hidden;
   font-size: 24px;
   line-height: $whatamiheight;
-  font-family: $font-sans;
+  font-family: $font-serif;
   display: inline-block;
-  transform: translate3d(0,6px,0);
+  transform: translate3d(0,7px,0);
   &__left, &__right {
     float: left;
     height: $whatamiheight;
   }
   &__left {
-    width: 120px;
+    width: 126px;
     text-align: right;
     padding-right: 7px;
     transform: translate3d(0,-$whatamiheight*2,0);
@@ -20,7 +20,7 @@ $whatamiheight: 30px;
     animation-fill-mode: forwards;
   }
   &__right {
-    width: 116px;
+    width: 126px;
     transform: translate3d(0,-$whatamiheight*3,0);
     animation: whatami-right 12s 1s infinite;
     animation-fill-mode: forwards;

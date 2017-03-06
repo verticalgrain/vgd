@@ -479,6 +479,10 @@ th {
   height: auto;
 }
 
+.u-centered {
+  text-align: center !important;
+}
+
 /*
   Layout goes in this file.
   Layout classes should be prefixed `.l-`
@@ -1251,7 +1255,7 @@ html {
 }
 
 body {
-  font-family: "Noto Serif", serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 180%;
   color: #2a2a2a;
@@ -1295,14 +1299,14 @@ h2,
 .heading2 {
   font-size: 24px;
   font-weight: 600;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Noto Serif", serif;
   line-height: 140%;
 }
 
 h3,
 .heading3 {
   font-size: 20px;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Noto Serif", serif;
 }
 
 h5,
@@ -1455,76 +1459,6 @@ hr {
   }
 }
 
-/*topToBottom Animation*/
-
-@-webkit-keyframes topToBottom {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0;
-    -webkit-transform: translateY(-50px);
-  }
-  10% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  25% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  30% {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/*Vertical Sliding*/
-.slidingVertical {
-  display: inline;
-  text-indent: 8px;
-}
-
-.slidingVertical span {
-  animation: topToBottom 12.5s linear infinite 0s;
-  -ms-animation: topToBottom 12.5s linear infinite 0s;
-  -webkit-animation: topToBottom 12.5s linear infinite 0s;
-  color: white;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-.slidingVertical span:nth-child(2) {
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
-}
-
-.slidingVertical span:nth-child(3) {
-  animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-}
-
-.slidingVertical span:nth-child(4) {
-  animation-delay: 7.5s;
-  -ms-animation-delay: 7.5s;
-  -webkit-animation-delay: 7.5s;
-}
-
-.slidingVertical span:nth-child(5) {
-  animation-delay: 10s;
-  -ms-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-}
-
 .overlay {
   display: block;
   width: 100%;
@@ -1590,24 +1524,24 @@ body.is-overlay-open .overlay {
 .what-am-i {
   overflow: hidden;
   font-size: 24px;
-  line-height: 30px;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 32px;
+  font-family: "Noto Serif", serif;
   display: inline-block;
-  -webkit-transform: translate3d(0, 6px, 0);
-          transform: translate3d(0, 6px, 0);
+  -webkit-transform: translate3d(0, 7px, 0);
+          transform: translate3d(0, 7px, 0);
 }
 
 .what-am-i__left, .what-am-i__right {
   float: left;
-  height: 30px;
+  height: 32px;
 }
 
 .what-am-i__left {
-  width: 120px;
+  width: 126px;
   text-align: right;
   padding-right: 7px;
-  -webkit-transform: translate3d(0, -60px, 0);
-          transform: translate3d(0, -60px, 0);
+  -webkit-transform: translate3d(0, -64px, 0);
+          transform: translate3d(0, -64px, 0);
   -webkit-animation: whatami-left 12s 1s infinite;
           animation: whatami-left 12s 1s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1615,9 +1549,9 @@ body.is-overlay-open .overlay {
 }
 
 .what-am-i__right {
-  width: 116px;
-  -webkit-transform: translate3d(0, -90px, 0);
-          transform: translate3d(0, -90px, 0);
+  width: 126px;
+  -webkit-transform: translate3d(0, -96px, 0);
+          transform: translate3d(0, -96px, 0);
   -webkit-animation: whatami-right 12s 1s infinite;
           animation: whatami-right 12s 1s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1626,25 +1560,25 @@ body.is-overlay-open .overlay {
 
 .what-am-i span {
   display: block;
-  height: 30px;
+  height: 32px;
 }
 
 @-webkit-keyframes whatami-left {
   0% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   11% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   16% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   43% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   48% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1663,27 +1597,27 @@ body.is-overlay-open .overlay {
             transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
 }
 
 @keyframes whatami-left {
   0% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   11% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   16% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   43% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   48% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1702,35 +1636,35 @@ body.is-overlay-open .overlay {
             transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
 }
 
 @-webkit-keyframes whatami-right {
   0% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
   27% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
   32% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   59% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   64% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   80% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1741,35 +1675,35 @@ body.is-overlay-open .overlay {
             transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
 }
 
 @keyframes whatami-right {
   0% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
   27% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
   32% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   59% {
-    -webkit-transform: translate3d(0, -60px, 0);
-            transform: translate3d(0, -60px, 0);
+    -webkit-transform: translate3d(0, -64px, 0);
+            transform: translate3d(0, -64px, 0);
   }
   64% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   75% {
-    -webkit-transform: translate3d(0, -30px, 0);
-            transform: translate3d(0, -30px, 0);
+    -webkit-transform: translate3d(0, -32px, 0);
+            transform: translate3d(0, -32px, 0);
   }
   80% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1780,8 +1714,8 @@ body.is-overlay-open .overlay {
             transform: translate3d(0, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(0, -90px, 0);
-            transform: translate3d(0, -90px, 0);
+    -webkit-transform: translate3d(0, -96px, 0);
+            transform: translate3d(0, -96px, 0);
   }
 }
 
@@ -1805,6 +1739,9 @@ body.is-overlay-open .overlay {
   -webkit-transform: translate3d(5px, 0, 0);
           transform: translate3d(5px, 0, 0);
   text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .box:after {
@@ -1815,6 +1752,10 @@ body.is-overlay-open .overlay {
   visibility: hidden;
 }
 
+.box img {
+  padding-bottom: 10px;
+}
+
 .spacebox {
   width: 100%;
   max-width: 300px;
@@ -1823,10 +1764,24 @@ body.is-overlay-open .overlay {
   border: 3px solid white;
 }
 
+#planet {
+  fill: blue;
+  background: red;
+}
+
 .hero {
   font-size: 24px;
   font-weight: 600;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Noto Serif", serif;
   line-height: 140%;
+}
+
+.footer {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.footer a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
