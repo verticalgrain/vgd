@@ -146,7 +146,20 @@ $l-col-width: 100% / $l-column-count;
   &--bottom {
     border-bottom: 2px solid $color-base;
   }
+
 }
+
+@media (max-width: map-get($breakpoints, small)) {
+  .l-border {
+    &--right {
+      border-right: 0px !important;
+    }
+    &--left {
+       border-left: 0px !important; 
+    }    
+  }
+}
+
 
 // Col function, for use setting column widths in stylesheets instead of with inline classes
 @function col($columns){
