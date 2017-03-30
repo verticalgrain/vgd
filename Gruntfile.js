@@ -35,7 +35,7 @@ module.exports = function(grunt) {
           ],
           'dist/js/application.js': [
             // 'src/js/modules/fibonacci.js',
-            'src/js/modules/overlay.js'
+            'src/js/modules/overlay.js',
           ]
         }
       }
