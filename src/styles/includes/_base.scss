@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  margin: 50px $space-unit 0;
+  margin: $space-unit $space-unit 0;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -23,16 +23,27 @@ body {
   min-height: 100vh;
   position: relative;
 }
-a {
-  @include type(headingdefault);
-  text-decoration: underline;
-}
 h1,h2,h3,h4,h5,h6,p,a{
   margin: 0;
+}
+a {
+  text-decoration: underline;
+  color: $color-base,
+}
+p {
+  margin-bottom: $space-unit;
 }
 h1,
 .heading1 {
   @include type(heading1);
+}
+h2,
+.heading2 {
+  @include type(heading2);
+}
+h3,
+.heading3 {
+  @include type(heading3);
 }
 h5,
 .heading5 {

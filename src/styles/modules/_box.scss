@@ -10,4 +10,9 @@
   @include clearfix;
   transform: translate3d(5px,0,0);
   text-align: center;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  img {
+    padding-bottom: 10px;
+  }
 }

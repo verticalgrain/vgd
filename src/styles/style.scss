@@ -18,6 +18,7 @@
 @import 'includes/utility';
 @import 'includes/layout';
 @import 'includes/vertical-spacing';
+@import 'includes/vertical-alignment';
 
 // Base styles. This file should be very minimal, containing very basic styles.
 @import 'includes/base';
@@ -31,9 +32,13 @@
 
 // Print, inlined to avoid the additional HTTP request: h5bp.com/r
 @import 'includes/print';
-@import 'modules/rotating-words';
 @import 'modules/overlay';
 @import 'modules/rapper';
 @import 'modules/what-am-i';
 @import 'modules/fibonacci';
 @import 'modules/box';
+@import 'modules/spacebox';
+@import 'modules/planet';
+@import 'modules/hero';
+@import 'modules/work';
+@import 'modules/footer';

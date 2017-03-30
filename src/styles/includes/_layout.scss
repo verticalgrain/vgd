@@ -6,7 +6,7 @@
 $breakpoint-no-mediaqueries: 1020px !default; // Not necessary if using sassyplate
 
 $l-gutter-body: 20px !default;
-$l-gutter-column: 10px !default;
+$l-gutter-column: 15px !default;
 $l-column-count: 12 !default;
 $l-container-width: map-get($breakpoints,xlarge);
 $l-col-width: 100% / $l-column-count;
@@ -133,6 +133,34 @@ $l-col-width: 100% / $l-column-count;
   padding-right: 0px;
 }
 
+.l-border {
+  &--right {
+    border-right: 2px solid $color-base;
+  }
+  &--left {
+     border-left: 2px solid $color-base; 
+  }
+  &--top {
+    border-top: 2px solid $color-base;
+  }
+  &--bottom {
+    border-bottom: 2px solid $color-base;
+  }
+
+}
+
+@media (max-width: map-get($breakpoints, small)) {
+  .l-border {
+    &--right {
+      border-right: 0px !important;
+    }
+    &--left {
+       border-left: 0px !important; 
+    }    
+  }
+}
+
+
 // Col function, for use setting column widths in stylesheets instead of with inline classes
 @function col($columns){
   @return $l-col-width * $columns;
@@ -147,6 +175,24 @@ $i: 1;
       width: 100% !important;
     }
   }
+}
+.l-col--2-4 {
+  width: 20%;
+  @media (max-width: map-get($breakpoints,small)) {
+    width: 100% !important;
+  }
+}
+.l-col--40 {
+  width: 40%;
+  @media (max-width: map-get($breakpoints,small)) {
+    width: 100% !important;
+  }
+}
+.l-col--60 {
+  width: 60%;
+  @media (max-width: map-get($breakpoints,small)) {
+    width: 100% !important;
+  } 
 }
 
 // Add background colours to columns and container
