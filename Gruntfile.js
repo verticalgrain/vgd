@@ -31,6 +31,7 @@ module.exports = function(grunt) {
             'src/js/vendor/modernizr-custom.js',
             'src/js/vendor/svgxuse.min.js',
             'src/js/vendor/jquery-2.0.0.min.js',
+            'src/js/vendor/lazy-load-xt.js',
             'src/js/modules/loaded.js'
           ],
           'dist/js/application.js': [

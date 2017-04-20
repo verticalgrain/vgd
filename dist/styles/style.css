@@ -1842,4 +1842,14 @@ body.is-overlay-open .overlay {
 .footer a {
   text-decoration: none;
 }
+
+.lazy-hidden {
+  opacity: 0;
+}
+
+.lazy-loaded {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
