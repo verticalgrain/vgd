@@ -7,6 +7,11 @@ app.loaded = (function($){
     // },1);
     $('html').addClass('is-anchored');
     $('body').addClass('loaded');
+
+    // Lazy load XT
+    $.extend($.lazyLoadXT, {
+      edgeY:  500,
+    });
   }
 
   /* Document ready
