@@ -573,7 +573,6 @@ th {
 }
 
 .l-container--flex {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -581,8 +580,6 @@ th {
 
 @media (max-width: 800px) {
   .l-container--flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -620,7 +617,6 @@ th {
 
 .l-container--centered {
   text-align: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1799,8 +1795,7 @@ body.is-overlay-open .overlay {
           transform: translate3d(5px, 0, 0);
   text-align: center;
   text-decoration: none;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .box:after {
@@ -1848,7 +1843,6 @@ body.is-overlay-open .overlay {
 }
 
 .lazy-loaded {
-  -webkit-transition: opacity .3s;
   transition: opacity .3s;
   opacity: 1;
 }
