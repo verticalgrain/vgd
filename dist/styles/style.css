@@ -549,6 +549,22 @@ th {
   }
 }
 
+.l-height--hero {
+  height: 32.5vw;
+}
+
+@media (max-width: 800px) {
+  .l-height--hero {
+    height: 42vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .l-height--hero {
+    height: 50vw;
+  }
+}
+
 .l-fullheight {
   height: 100vh;
 }
