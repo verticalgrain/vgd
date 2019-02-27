@@ -59,17 +59,26 @@ $l-col-width: 100% / $l-column-count;
   }// &--right
 
   // prevents .l-fullwidth-bg from adding to page width
-  &__wrapper{
+  &__wrapper {
     overflow-x: hidden;
-
     @media (max-width: map-get($breakpoints,small)) {
-        overflow: initial;
+      overflow: initial;
     }
   }
 
 }// .l-fullwidth-bg
 
-
+.l-height {
+  &--hero {
+    height: 32.5vw;
+    @media (max-width: map-get($breakpoints,small)) {
+      height: 42vw;
+    }
+    @media (max-width: map-get($breakpoints,xsmall)) {
+      height: 50vw;
+    }
+  }
+}
 
 .l-fullheight {
   height: 100vh;
